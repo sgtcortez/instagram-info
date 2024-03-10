@@ -18,7 +18,7 @@ Because, its to much and instagram can actually block normal people to see their
 
 # How to Use
 
-To make thigs work, you will need to log in on instagram in the webbrowser, then, open the developer mode and parse the source code(`get_infos.js`).  
+To make thigs work, you will need to log in on instagram in the webbrowser, then, open the developer mode and paste the source code(`get_infos.js`).  
 Then, just call the main function: `start_fetch` providing the instagram username of the user ...   
 For example:  
 ```js
@@ -34,14 +34,7 @@ jq .followers[].id <file2> | sort > /tmp/followers2.txt
 diff /tmp/followers1.txt /tmp/followers2.txt
 ```
 
-It will return which users id were removed, and which were added
+It will return which users id were removed, and which were added.    
+Note: Use instagram user id(because a user may change usernames).  
+After getting the id, find in the files.
 
-# Features
-
-- See list of followers of a user(Current, from a date etc).      
-- See list of following of a user(Current, from a date ...).    
-- See users that the does not follow back.    
-- See who user follows and does not follow they back.  
-- Check when a user started following someone.    
-- Check when someone unfollowed the user.
-- Check mutual following from two distinct users.
